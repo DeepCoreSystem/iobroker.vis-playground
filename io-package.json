@@ -1,0 +1,34 @@
+{
+    "common": {
+        "name":                     "vis-playground",
+        "version": "0.0.1",
+        "title":                    "ioBroker Visualisation - playground Widgets",
+        "desc": {
+            "en":                   "playground Widgets for ioBroker.vis",
+            "de":                   "playground Widgets für ioBroker.vis",
+            "ru":                   "playground Widgets для ioBroker.vis"
+        },
+        "platform":                 "Javascript/Node.js",
+        "icon":                     "playground.png",
+        "enabled":                  true,
+        "mode":                     "once",
+        "extIcon":                  "https://github.com/ioBroker/ioBroker.js-controller/raw/master/adapter/example/admin/example.png",
+        "keywords":                 ["playground", "vis", "GUI", "graphical", "scada"],
+        "readme":                   "https://github.com/ioBroker/ioBroker.vis-playground/blob/master/README.md",
+        "authors": [
+            "DeepCore System <devap@deepcore.eu>"
+        ],
+        "localLink":                "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+        "license":                  "MIT",
+        "dependencies":             ["vis"],
+        "onlyWWW":                  true,
+        "singleton":                true,
+        "type":                     "vis",
+		"restartAdapters":          ["vis"]
+    },
+    "native": {
+        "dependencies":          []
+    },
+    "instanceObjects": [
+    ]
+}
