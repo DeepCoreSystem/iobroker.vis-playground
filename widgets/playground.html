@@ -14,9 +14,10 @@
         height: 100%;
         margin: 0;
         -webkit-font-smoothing: antialiased;
-        font-weight: 400;
+        font-weight: normal;;
         font-family: 'Roboto', sans-serif;
         font-size: 12pt;
+        background: transparent;
     }
 
     .tabs input[type=radio] {
@@ -31,32 +32,34 @@
         list-style: none;
         position: relative;
         padding: 0;
-        /*margin: 50px auto;*/
-        /* top, ... */
+        margin: 10px auto; /* top, ... */
+            border-top: 1px solid #a0a0a0;
+            background: transparent;
     }
 
     .tabs li {
         float: left;
+        background: transparent;
     }
 
     .tabs label {
         display: block;
         padding: 10px 20px;
         /*border-bottom: 2px solid orange;*/
-        border-radius: 7px 7px 0 0;
+        /*border-radius: 7px 7px 0 0;*/
         /* top left, top right, bottom right, bottom left */
-        color: #08C;
+        color: #a0a0a0;
         font-size: 18px;
         font-weight: normal;
         font-family: 'RobotoCondensed-Regular', sans-serif;
-        background: rgba(90, 90, 90, 0.2);
+        background: transparent;
         cursor: pointer;
         position: relative;
         /*top: 3px;*/
-        -webkit-transition: all 0.25s ease-in-out;
-        -moz-transition: all 0.25s ease-in-out;
-        -o-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
+        /*-webkit-transition: all 0.25s ease-in-out;*/
+        /*-moz-transition: all 0.25s ease-in-out;*/
+        /*-o-transition: all 0.25s ease-in-out;*/
+        /*transition: all 0.25s ease-in-out;*/
     }
 
     .tabs label:hover {
@@ -65,8 +68,8 @@
     }
 
     [id^=tab]:checked+ label {
-        background: #08C;
-        color: white;
+        background: transparent url(widgets/playground/img/uiTabsArrow.png) no-repeat bottom center;
+        color: orange;
         /*top: 3px;*/
     }
 
@@ -75,19 +78,21 @@
     }
 
     .tab-content {
+      background: transparent;
         z-index: 2;
         display: none;
         text-align: left;
         width: 100%;
-        height: 680px;
+        /*height: 680px;*/
         font-size: 20px;
-        line-height: 140%;
-        border-width: 2px;
-        border-color: orange;
-        border-top-style: solid;
+        /*line-height: 140%;*/
+        border-top: 1px solid #a0a0a0;
+        /*border-width: 2px;*/
+        /*border-color: orange;*/
+        /*border-top-style: solid;*/
         /*border-style: solid;*/
-        border-radius: 0 0 7px 7px;
-        padding-top: 10px;
+        /*border-radius: 0 0 7px 7px;*/
+        /*padding-top: 10px;*/
         /*background: #08C;*/
         padding: 15px;
         color: white;
